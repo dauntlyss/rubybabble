@@ -4,7 +4,7 @@ require "minitest/autorun"
 require_relative "../../tile_group.rb"
 
 class TileGroup::TestInitialize < Minitest::Test
-  # Used tp setup a new TileGroup before each test
+  # Used to setup a new TileGroup before each test
   def setup
     @group = TileGroup.new
   end

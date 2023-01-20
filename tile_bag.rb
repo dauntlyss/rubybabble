@@ -37,13 +37,12 @@ class TileBag
     @random = rand(@tile_bag.length - 1)
     @random_tile = @tile_bag[@random]
     @tile_bag.delete_at(@random)
-    return @random_tile
+    @random_tile
   end
 
   # Returns true if the bag is empty, false otherwise
   def empty?
-    @is_bag_empty = @tile_bag.empty?
-    return @is_bag_empty
+    @tile_bag.empty?
   end
 
   # Returns the point values for a given tiles

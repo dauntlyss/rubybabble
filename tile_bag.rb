@@ -4,10 +4,10 @@ class TileBag
 
   def initialize
     @tile_bag = []
-    9.times() {@tile_bag.push :A}
-    2.times() {@tile_bag.push :B}
-    2.times() {@tilebag.push :C}
-    4.times() {@tile_bag.push :D}
+    9.times() { @tile_bag.push :A }
+    2.times() { @tile_bag.push :B }
+    2.times() { @tilebag.push :C }
+    4.times() { @tile_bag.push :D }
     12.times() { @tile_bag.push :E }
     2.times() { @tile_bag.push :F }
     3.times() { @tile_bag.push :G }
@@ -59,5 +59,5 @@ class TileBag
       :V => 4,  :W => 4,  :X => 8,
       :Y => 4,  :Z => 10
     }
-
+  end
 end

@@ -32,6 +32,7 @@ class TileGroup::TestAppend < Minitest::Test
     @group.append('E')
     @group.append('E')
     @group.append('E')
+    assert_equal "EEE", @group.hand
   end
 
 end

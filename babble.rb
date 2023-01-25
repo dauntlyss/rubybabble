@@ -40,7 +40,6 @@ class Babble
       if @user_input == ":quit" || @user_input == ":QUIT"
         break
       elsif @user_input == ""
-        puts "Please create a word using these letter tiles: "
         display_score
       elsif (@user_input != "" && @rack.has_tiles_for?(@user_input) == false)
         puts "Not enough tiles"

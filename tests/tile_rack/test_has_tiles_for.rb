@@ -4,7 +4,7 @@ require "minitest/autorun"
 require_relative "../../tile_rack.rb"
 require_relative "../../tile_group.rb"
 
-class TileRack::TestNumberOfTilesNeeded < Minitest::Test
+class TileRack::TestHasTilesFor < Minitest::Test
   # Used to setup a new TileRack before each test
   def setup
     @tr = TileRack.new

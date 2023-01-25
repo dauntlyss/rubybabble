@@ -61,4 +61,9 @@ class TileBag
     @points = @tile_points[tile.to_sym]
     @points
   end
+
+  # Helper method to count how many tiles remain in the bag
+  def contents_count
+    return @tile_bag.length
+  end
 end

@@ -44,7 +44,7 @@ class TileRack < TileGroup
   def string_to_array(text)
     @text = text
     @string_array = @text.split("")
-    @symbol_array = @text_string_array.map {|letter| letter.to_sym}
+    @symbol_array = @string_array.map {|letter| letter.to_sym}
     return @symbol_array
   end
 
@@ -58,5 +58,5 @@ class TileRack < TileGroup
     end
     return @updated_array
   end
-  
+
 end

@@ -44,11 +44,13 @@ class Babble
       elsif (@user_input != "" && @rack.has_tiles_for?(@user_input) == false)
         puts "Not enough tiles"
         display_score
+        puts ""
       elsif (@user_input != "" && Spellchecker::check(@user_input)[0][:correct] == true && @rack.has_tiles_for?(@user_input) == true)
         score_word
       else
         puts "Not a valid word"
         display_score
+        puts ""
       end
     end
 
@@ -65,7 +67,7 @@ class Babble
         draw_tiles
       }
     elsif (@bag.empty? == true && @rack.number_of_tiles_needed == MAX_SIZE)
-      puts "There are no more tiles in the bag."
+      puts "Congrats! You've used all the tiles in the game, you win!"
       end_game
     end
   end
@@ -79,6 +81,7 @@ class Babble
     calculate_total_score(@word_score)
     number_of_tiles_played(@word_tiles.length)
     puts "Your new score is: " + @total_score.to_s
+    puts ""
   end
 
   def calculate_total_score(score)
@@ -105,8 +108,9 @@ class Babble
   def end_game
     puts ""
     puts "**********************************"
-    puts "Thanks for playing, total score " + @total_score.to_s
+    puts "Thanks for playing, total score: " + @total_score.to_s
     puts ""
+    exit
   end
 
 end

@@ -2,6 +2,7 @@
 
 class TileBag
 
+# The zero-parameter constructor that initializes the bag with a complete set of tiles
   def initialize
     @tile_bag = []
     9.times() { @tile_bag.push :A }
